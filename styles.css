@@ -21,6 +21,9 @@ header nav ul li {
 .clear {
     clear: both;
 }
+.paragraph {
+    color: rgb(330, 1, 4)
+}
 #projects {
     margin: 0 auto;
     width: 90%;
