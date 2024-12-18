@@ -1,60 +1,91 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: sans-serif
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align content */
 }
-a{
-    color: rgb(255, 81, 0);
+
+/* Navigation Bar */
+.navbar {
+    width: 100%; /* Full width */
+    max-width: 1200px;
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background */
+    color: #fff;
+    padding: 1rem 2rem; /* Spacing */
 }
-a:hover {
-    color: #00AEFF;
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
-header {
-    margin-bottom: 20px;
+
+.nav-links {
+    list-style: none;
+    display: flex; /* Flexbox for horizontal layout */
+}
+
+.nav-links li {
+    margin-left: 20px; /* Space between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #4CAF50; /* Highlight color on hover */
+}
+
+/* Flexbox Container for Two Divs */
+.flex-container {
+    display: flex; /* Side-by-side layout */
+    width: 80%; /* Container width */
+    max-width: 1200px;
+    margin: 30px auto; /* Center the container and add space */
+    gap: 20px; /* Space between divs */
+    margin-top: 0;
+}
+
+.box {
+/* Equal width for both divs */
+    padding: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    /* color: #fff; */
+    border-radius: 10px;
+}
+
+/* Background Colors */
+.box1 {
+    flex: 1; 
+}
+
+.box2 {
+    flex: 2; 
+}
+.home {
+    width: 50%; /* Set a width */
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Center text inside */
     padding: 20px;
-    border-bottom: 1px solid rgb(0, 174, 255);
+    margin-top: 20px;
+    font-size: 2.5rem;
+
 }
-header h1 {
-    font-size: 2em;
-    padding: 20px
-}
-header nav ul li {
-    display: inline;
-}
-.clear {
-    clear: both;
-}
-.paragraph {
-    color: rgb(330, 1, 200);
-}
-#projects {
-    margin: 0 auto;
-    width: 90%;
-    max-width: 600px;
-}
-.project {
-    margin-bottom: 20px;
-    border-bottom: 1px solid rgb(0, 174, 255);
-}
-.project img {
-    width: 250px;
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-.project h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-#aboutme {
-    margin: 0 auto;
-    width: 90%;
-    max-width: 600px;
-}
-#aboutme img {
-    width: 750px;
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-#aboutme p {
-    font-size: 2em;
+.linkcolor{
+    color: #03b6fc
 }

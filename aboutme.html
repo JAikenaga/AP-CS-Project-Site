@@ -1,31 +1,44 @@
 <!DOCTYPE html>
-<html lang ="en">
-
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<title>Jason's Projects</title> <!-- Jason Is Cool-->
-<link rel="stylesheet" href="reset.css" type="text/css">
-<link rel="stylesheet" href="styles.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <h1>Jason's Projects</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>|</li>
-                <li><a href="aboutme.html">About Me</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Jason Ikenaga</div>
+        <ul class="nav-links">
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="#services">Apps</a></li>
+            <li><a href="#services">Thesis</a></li>
+            <li><a href="#services">Projects</a></li>
+        </ul>
+    </nav>
 
-    <div id="aboutme">
-        <h2>About Me</h2>
-        <img src="img/Minecraft first death.PNG" />
-        <div class="clear"></div>
-        <p>Gamer gang</p>
-    </div>
+    <!-- Example Content -->
+    <section id="Title" class = "home">
+        <h1>About Me</h1>
+    </section>
+
+    <!-- Use Section Instead of a Container -->
+    <section class="flex-container">
+        <div class="box box1">
+            <img src="images\IMG_1433.jpeg" style="width: 90%; height: auto;">
+        </div>
+        <div class="box box2"><p> Hi, my name is Jason Ikenaga. I am a recent graduate of Washington College with a Bachelor's in Computer Science and a Bacheelor's in math. I am currently looking for work in either of these fields. 
+            </p><br>
+            <a href="aboutme.html"><p class="linkcolor">Check out some of the projects I have done as a lab technician.</p>
+            </a><br>
+            <a href="aboutme.html"><p class="linkcolor">Check out some of the apps I created in College.</p>
+            </a><br>
+            <a href="aboutme.html"><p class="linkcolor">Check out my the chess neural network I created for my senior thesis</p>
+            </a>
+        </div>
+    
+            </section>
+
 </body>
-
 </html>
