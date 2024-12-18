@@ -77,6 +77,12 @@ body {
 .box2 {
     flex: 2; 
 }
+.resumebox{
+    text-align: center;
+    font-size: 1.5rem;
+    flex:1;
+
+}
 .home {
     width: 50%; /* Set a width */
     margin: 0 auto; /* Center horizontally */
