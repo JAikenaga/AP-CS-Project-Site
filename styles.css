@@ -72,10 +72,19 @@ body {
 /* Background Colors */
 .box1 {
     flex: 1; 
+    border: 2px solid #000000;
+    background-color: #333;
 }
 
 .box2 {
     flex: 2; 
+    
+}
+.wacconnectbox {
+    flex: 1;
+}
+.bikesharebox {
+    flex:1 ;
 }
 .resumebox{
     text-align: center;
@@ -94,4 +103,15 @@ body {
 }
 .linkcolor{
     color: #03b6fc
+}
+
+.wacconnectdiv{
+    margin-top: 20px;
+}
+
+.pagedescription{
+    max-width: 1200px;
+    width: 80%;
+    text-align: center;
+    font-size: 1.2rem;
 }
